@@ -1,0 +1,84 @@
+{% load static %}
+
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>hospital app</title>
+    <link rel='stylesheet' href = "{% static 'style.css' %}" />
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/toastr.js/latest/toastr.min.css">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
+    <link href="{% static 'django_summernote/summernote-bs4.css' %}" rel="stylesheet">
+    <script src="{% static 'django_summernote/summernote-bs4.min.js' %}"></script>
+</head>
+<body>
+   <div class="myNav">
+    <a href="/"><span>all</span>Care</a>
+    <p id ="address"> Address: N0 33 Close, General White Crescent <br/>
+        Wuse Zone II, Abuja.</p>
+
+    <p id="email">Email: allcarehospital@gmail.com</p>
+
+    <p id="phone">Phone: +234 8012 345 678</p>
+
+   </div>
+<div id="hamburger-menu">
+    <button class="hamburger-button"> ☰ </button>
+    <div class="navStrip"></div>
+    <a href="/" id = "logo"><span>all</span>Care</a>
+<div class="myNavMobile">
+        <a href = "/" class = "{% if request.path == '/' %}active{% endif %}">Home</a>
+        <a href = "/about" class = "{% if request.path == '/about/' %}active{% endif %}">About</a>
+        <a href = "/doctors" class = "{% if request.path == '/doctors/' %}active{% endif %}">Doctors</a>
+        <a href="/pricing" class = "{% if request.path == '/pricing/' %}active{% endif %}">Pricing</a>
+        <a href="/blog" class = "{% if request.path == '/blog/' %}active{% endif %}">Blog</a>
+        <a href = '/appointment' class="{% if request.path == '/appointment/' %}active{% endif %}">Appointment</a>
+    </div>
+ </div>
+
+<div class="submyNav">
+    <a href = "/" class = "{% if request.path == '/' %}active{% endif %}">HOME</a>
+    <a href = "/about" class = "{% if request.path == '/about/' %}active{% endif %}">ABOUT</a>
+    <a href = "/doctors" class = "{% if request.path == '/doctors/' %}active{% endif %}">DOCTORS</a>
+    <a href="/pricing" class = "{% if request.path == '/pricing/' %}active{% endif %}">PRICING</a>
+    <a href="/blog" class = "{% if request.path == '/blog/' %}active{% endif %}">BLOG</a>
+    <a href = '/appointment'><button type="button" id="appointButton1">Make an Appointment</button></a>
+</div>
+</div>
+    {% block content %}
+    {% endblock %}
+    <div class="footer">
+    <p id ="address"> Address: N0 33 Close, General White Crescent <br/>
+        Wuse Zone II, Abuja.</p>
+
+    <p id="email">Email: allcarehospital@gmail.com</p>
+
+    <p id="phone">Phone: +234 8012 345 678</p>
+
+    <p id="copyright">&copy; allCare 2024</p>
+
+   </div>
+    <script src="{% static 'func.js' %}"></script>
+    <script>
+        // Toastr configuration (optional)
+        toastr.options = {
+            "closeButton": true,
+            "debug": false,
+            "newestOnTop": false,
+            "progressBar": true,
+            "positionClass": "toast-top-right",
+            "preventDuplicates": false,
+            "onclick": null,
+            "showDuration": "300",
+            "hideDuration": "1000",
+            "timeOut": "5000",
+            "extendedTimeOut": "1000",
+            "showEasing": "swing",
+            "hideEasing": "linear",
+            "showMethod": "fadeIn",
+            "hideMethod": "fadeOut"
+        };
+    </script>
+</body>
+</html>

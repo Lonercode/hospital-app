@@ -1,0 +1,49 @@
+{% extends 'base.html' %}
+{% load static %}
+
+{% block content %}
+<div class="aboutPage">
+    <div class="about">
+        <h1>A Century of Care</h1>
+    <p>We have made it our century old mission to provide the best healthcare Services
+    at affordable rates. Our history began in 1924 when William Bach our founder opened 
+the doors of the institution to the community. <br>
+Over the years, all<span>Care</span> has expanded its facilities and expertise. Today we stand as a leading
+healthcare institution equipped with cutting-edge technology and a team of compassionate professionals
+who are committed to improving lives everyday.</p>
+    </div>
+</div>
+
+<div class="services">
+    <img src="{% static 'mountain.png' %}" id ='mountain'/>
+    <h3 id="columnh3">Our Mission</h3>
+    <p>To enhance the health and well-being of our patients and the communities we serve.</p>
+    <div class="rowAbout">
+    <div class="leftAbout">
+        <img src="{% static 'services.png' %}" id ='services'/>
+        <h3>Our Services</h3>
+        <p>A diverse range of services ranging from emergency trauma and care to rehabilitation and
+            physical therapy.
+        </p>
+
+    </div>
+    
+    <img src="{% static 'aboutWoman.png' %}" id="aboutWoman"/>
+    
+    <div class="rightAbout">
+        <img src="{% static 'team.png' %}" id ='team'/>
+        <h3>Our Team</h3>
+        <p>Our team consists of dedicated healthcare professionals, including board-certified 
+            physicians, nurses and supoort staff.
+        </p>
+
+    </div>
+    </div>
+    <img src="{% static 'community.png' %}" id ='community'/>
+    <h3 id="columnh3">Community Engagement</h3>
+    <p>We are proud to be actively involved in our community through health education programs,
+        screenings and partnerships with local and international organizations.
+    </p>
+</div>
+
+{% endblock %}

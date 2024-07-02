@@ -1,0 +1,25 @@
+{% extends 'base.html' %}
+
+{% block content %}
+<div class = "pricingTextMobile">
+    <h1>The Best Care at Affordable Prices.</h1>
+    <p>(Please note that prices may vary. Call to confirm)</p>
+</div>
+<div class="pricingPage">
+    <div class="pricingText">
+    <h1>The Best Care at Affordable Prices.</h1>
+    <p>(Please note that prices may vary. Call to confirm)</p>
+    </div>
+    <div class="priceList">
+        {% for pricing in pricingStuff %}
+        <div class="price1">
+            <h3> {{pricing.pricedItem}}</h3>
+            <h3 id="amount">&#8358; {{pricing.price}}</h3>
+        </div>
+
+        {% endfor %}
+       
+</div>
+</div>
+    
+{% endblock %}

@@ -1,0 +1,12 @@
+{% extends 'base.html' %}
+{% block content %}
+
+<div class = "blogItem">
+<img src = "/media/{{ posts.imageInPage }}" id = "blogItemImage"/>
+<h2 id = "blogPostTitle">{{posts.title}}</h2>
+<p id = "time">{{posts.created_on}}</p>
+<div id="itemText">
+<p>{{posts.body|safe}}</p>
+</div>
+</div>
+{% endblock %}

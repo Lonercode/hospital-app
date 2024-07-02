@@ -1,0 +1,27 @@
+{% extends 'base.html' %}
+{% load static %}
+
+{% block content %}
+
+<div class="doctorsPage">
+    <h1>Meet our Expert Practitioners</h1>
+    <div class="doctorsContainer">
+    <div class="doctorsRow1">
+        {% for doctor in doctorsInfo %}
+        <div class="doctor1">
+        <img src = "/media/{{doctor.docImage}}" id = "docImage"/>
+        <h2>{{doctor.name}}</h2>
+        <h3>{{doctor.specialty}}</h3>
+        <p>{{doctor.about}}
+            </p>
+        </div>
+        {% if forloop.counter|divisibleby:3 and not forloop.last %}
+    </div><div class="doctorsRow1">
+        {% endif %}
+        {% endfor %}
+        
+    </div>
+</div>
+</div>
+
+{% endblock %}
