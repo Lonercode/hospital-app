@@ -81,11 +81,11 @@ WSGI_APPLICATION = 'hospitalManage.wsgi.application'
 DATABASES = {
     'default': {
         'ENGINE': 'django.db.backends.postgresql',
-        'NAME': 'hospitaldata',
-        'USER': 'postgres',
-        'PASSWORD': 'genius557',
-        'HOST': 'localhost',
-        'PORT': ''
+        'NAME': 'postgres',
+        'USER': 'postgres.afjoxazhndvwmubkrnsg',
+        'PASSWORD': '8Vejb6M0sVsEg8Vi',
+        'HOST': 'aws-0-eu-west-2.pooler.supabase.com',
+        'PORT': '6543'
 
     }
 }
