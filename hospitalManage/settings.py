@@ -138,6 +138,8 @@ STATICFILES_DIRS = [
     os.path.join(BASE_DIR/'hospitalApp', 'static')
 ]
 
+STATIC_ROOT = os.path.join(BASE_DIR, "hospitalApp/static")
+
 
 MEDIA_ROOT = BASE_DIR /'hospitalApp/static/media'
 
