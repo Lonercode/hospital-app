@@ -40,7 +40,7 @@ NAME=your_database_name<br/>
 USER=your_database_username<br/>
 PASSWORD=your_database_password<br/>
 HOST=localhost<br/>
-PORT=5432
+PORT=
 
 6. Apply Migrations
 ```bash
