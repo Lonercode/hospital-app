@@ -1,9 +1,9 @@
 # hospital-app
 Fullstack web app for a fictional hospital.
 
-> ***The app targets python 3***\
+> ***The app targets python 3***
 ## Start here
-To use the app, you would need django 5.0.3, pip and a postgreSQL database.\
+To use the app, you would need django 5.0.3, pip and a postgreSQL database.
 
 # Setup Instructions
 1. Clone the Repository
@@ -36,10 +36,10 @@ Create a new database and note down the credentials (database name, username, pa
 Rename .env.example to .env.
 Edit .env file with your PostgreSQL database credentials:
 
-NAME=your_database_name
-USER=your_database_username
-PASSWORD=your_database_password
-HOST=localhost
+NAME=your_database_name<br/>
+USER=your_database_username<br/>
+PASSWORD=your_database_password<br/>
+HOST=localhost<br/>
 PORT=5432
 
 6. Apply Migrations
