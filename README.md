@@ -1,3 +1,5 @@
+![hospital](https://github.com/user-attachments/assets/c7229a30-c93e-462a-b820-fb5a9edd9c0b)
+
 # hospital-app
 Fullstack web app for a fictional hospital.
 
